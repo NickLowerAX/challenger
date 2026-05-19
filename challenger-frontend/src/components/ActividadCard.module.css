@@ -1,0 +1,106 @@
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.left {
+  flex-shrink: 0;
+}
+
+.iconCircle {
+  width: 52px;
+  height: 52px;
+  background: #e8f5f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a2e4a;
+  margin: 0;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #888;
+  flex-wrap: wrap;
+}
+
+.libre { color: #e07b39; font-size: 13px; font-weight: 500; }
+.lleno { color: #c0392b; font-size: 13px; font-weight: 500; }
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.btnUnirse {
+  background: #2ea87e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.btnUnirse:hover:not(:disabled) { background: #239068; }
+.btnUnirse:disabled { background: #ccc; cursor: not-allowed; }
+
+.btnEditar {
+  background: transparent;
+  color: #1a2e4a;
+  border: 1.5px solid #1a2e4a;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnEditar:hover { background: #f0f4fa; }
+
+.btnEliminar {
+  background: transparent;
+  color: #c0392b;
+  border: 1.5px solid #c0392b;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnEliminar:hover { background: #fff0f0; }
